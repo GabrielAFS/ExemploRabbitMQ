@@ -6,11 +6,11 @@ import java.io.IOException;
 
 public class Receptor {
 
-  private final static String QUEUE_NAME = "minha-fila";
+  private final static String QUEUE_NAME = "gabriel";
 
   public static void main(String[] argv) throws Exception {
     ConnectionFactory factory = new ConnectionFactory();
-    factory.setUri("amqp://...");
+    factory.setUri("amqp://iagffzqu:Ap7xUW4Dj_XXMJWCWvK0TcoU4RDvFMMi@cat.rmq.cloudamqp.com/iagffzqu");
     Connection connection = factory.newConnection();
     Channel channel = connection.createChannel();
 
